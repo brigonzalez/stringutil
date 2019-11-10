@@ -19,9 +19,11 @@ package stringutil
 import "testing"
 
 func TestReverse(t *testing.T) {
+	t.FailNow()
+	t.Log("testing t.Log")
 	for _, c := range []struct {
 		in, want string
-	}{
+	} {
 		{"Hello, world", "dlrow ,olleH"},
 		{"Hello, 世界", "界世 ,olleH"},
 		{"", ""},
